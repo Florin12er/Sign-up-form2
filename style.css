@@ -1,0 +1,38 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 890px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.input {
+  display : grid;
+  gap: 10px;
+}
+
+
+input {
+  width: 200px;
+  height: auto;
+}
+
+button {
+    width: 80px;
+  height: 40px;
+}
+
+input:invalid {
+  border : 2px dashed red;
+}
+
+
+input:invalid:required {
+  background-image : linear-gradient(to right, pink , lightgreen);
+}
+
+input:valid {
+  border: solid green ;
+}

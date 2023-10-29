@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="/home/sebastian/Sign-up-form2/style.css">
 </head>
 <body>
-    <input type="text" placeholder= "give me your email" required id = "email">
-    <input type= "text" placeholder= "where do you live" required id = "country">
+    <form class = "input">
+    <label for="email">email</label>
+    <input type="email" placeholder= "give me your email" required id = "email">
+    <label for="age">your age</label>
+    <input type= "number" placeholder = "give me your age"  id = "age" value= "1" min="17" max="250" required>
+    <label for="Country">Country : </label>
+    <select id="Country">
+    <option value="ch">Switzerland</option>
+    <option value="fr">France</option>
+    <option value="de">Germany</option>
+    <option value="nl">The Netherlands</option>
+  </select> 
+    <label for="password">what is your password</label>
     <input type= "password" placeholder= "give me your password" required id = "password">
-    <button type="submit">submit</button>
+    <button id= "submit" type="submit">submit</button>
+    </form>
+    <script src= "index.js"></script>
 </body>
 </html>
 
